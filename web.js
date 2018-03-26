@@ -15,7 +15,7 @@ app.get('/update', function(req, res){
 })
 
 app.get('/get', function(req, res){
-	fs.readFile('update.txt', 'utf-8', function(error, data){
+	fs.readFile('update.txt', 'utf-8', function(err, data){
 		res.end(data);
 	});
 })
